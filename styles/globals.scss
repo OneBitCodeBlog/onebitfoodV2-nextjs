@@ -1,0 +1,47 @@
+@import 'colors.scss';
+
+$theme-colors: (
+  'custom-red': $custom-red,
+  'custom-gray': $custom-gray,
+  'custom-gray-darker': $custom-gray-darker,
+  'custom-black': $custom-black,
+  'custom-orange': $custom-orange
+);
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  6: ($spacer * 5),
+  7: ($spacer * 10),
+  8: ($spacer * 15),
+  9: ($spacer * 20)
+);
+
+$font-weight-bold: 600;
+
+@import '~bootstrap/scss/bootstrap';
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background-image: url('../public/bg.png');
+}
+
+@media (max-width: 1025px) { .container { width: 95% !important }}
+
+
+.clickable_effect:hover {
+  opacity: 0.8;
+  transform:scale(1.01);
+  cursor: pointer;
+}
