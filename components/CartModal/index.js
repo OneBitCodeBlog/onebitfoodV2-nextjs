@@ -24,7 +24,7 @@ export default function CartModal(props) {
         {cart.products.length > 0 &&
           <div className='text-center pt-2'>
             <Link href='/orders/new'>
-              <Button variant='custom-red' className='text-white'>
+              <Button variant='custom-red' className='text-white' onClick={() => props.onHide()}>
                 Finalizar pedido
               </Button>
             </Link>
